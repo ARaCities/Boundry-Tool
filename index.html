@@ -373,10 +373,10 @@
     map.setView([hit.lat, hit.lon], 14);
 
     if (inColumbus){
-      renderResult('ineligible', 'Not eligible', 'This address is inside the city of Columbus, which is excluded from this program.', hit.label);
+      renderResult('ineligible', 'Not eligible', 'This address is inside the city of Columbus, which is excluded from this program. Check out the CHIP 1.0 program for assistance available within city limits.', hit.label);
       marker.bindPopup('Not eligible &mdash; City of Columbus').openPopup();
     } else if (inHope){
-      renderResult('ineligible', 'Not eligible', 'This address is inside the town of Hope, which is excluded from this program.', hit.label);
+      renderResult('ineligible', 'Not eligible', 'This address is inside the town of Hope, which is excluded from this program. Reach out to the Town of Hope for information on their program.', hit.label);
       marker.bindPopup('Not eligible &mdash; Town of Hope').openPopup();
     } else if (inCounty){
       renderResult('eligible', 'Eligible', 'This address is in Bartholomew County, outside the Columbus city limits and the Hope town limits.', hit.label);
